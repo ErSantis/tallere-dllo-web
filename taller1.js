@@ -31,7 +31,10 @@ const peorParidad = (num) => {
 
     let resultado = false;
     let contador = 0;
-
+    if (num === 0) {
+        resultado = true;
+        return resultado;
+    }
     while (contador < num) {
         contador += 2;
         if (contador === num) {
@@ -44,5 +47,5 @@ const peorParidad = (num) => {
 
 console.log(convertidorTemp(30));
 console.log(resolvedor(1, 5, 4, false));
-console.log(mejorParidad(4));
-console.log(peorParidad(6));
+console.log(mejorParidad(0));
+console.log(peorParidad(0));
